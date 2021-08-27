@@ -1,32 +1,30 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div>
+      <h1>Comming Soon...</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'HelloWorld'
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+  div {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: auto;
+  }
+
+  h1 {
+      flex: 1;
+      color: white;
+      font-family: 'Lobster', cursive;
+      font-weight: 400;
+      font-size: 10vw;
+      margin: 0px;
+  }
 </style>

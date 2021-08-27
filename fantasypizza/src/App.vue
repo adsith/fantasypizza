@@ -1,21 +1,24 @@
 <template>
-  <div>
-    <HelloWorld msg="Comming Soon..."/>
+  <div id="mainContainer">
+    <Header />
+    <HelloWorld />
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Header,
   },
   data() {
     return{
       bodyStyle:{
-        backgroundColor: "#5ABCB9"
+        backgroundColor: "#58ABE5"
       }
     }
   }
@@ -29,6 +32,17 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #58ABE5;
 }
 </style>
